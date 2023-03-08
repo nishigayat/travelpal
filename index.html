@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel to Mexico</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h3 class="logo"><span>Travel to Mexico</span></h3>
+      <h1><a href="">WELCOME TO MEXICO</a></h1>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#attractions">Attractions</a></li>
+        <li><a href="#meals">Meals</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home">
+    <br>
+    <div class="container">
+      <div class="info">
+        <h3>Travel Information</h3>
+        <p><span id="temperture"></span></p>
+        <p><span id="time"></span></p>
+        <p id="time"></p><span id="wether"></span></p>
+        <p><span id="humidity"></span></p>
+        <p><span id="windspeed"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+  <script src="meal.js"></script>
+  <br>
+  <center>
+    <section id="attractions">
+      <br><br><br><br><br><br><br><br>
+      <div class="attractions" id="attractions">
+        <h3>Places of Attraction</h3>
+        <br>
+        <div id="attraction-list">
+          <div class="attraction">
+            <img src="chickenitza.jpg" alt="Chicken Itza">
+            <h4>Chicken Itza</h4>
+            <p>Chichén Itzá , Ancient ruined Mayan city in Mexico's Yucatán state. Chichén Itzá was founded by the Maya about the 6th century AD in an arid region where water was obtained from natural wells called cenotes.</p>
+            <img src="greatpyramidofcholula.jpg" alt="Great Pyramid of Cholula">
+            <h4>Great Pyramid of Cholula</h4>
+            <p>Cholula was the center of worship for Quetzalcoatl, one of the Mayans' most important gods. When the Aztecs eventually arrived, they were amazed by Cholula's size. They believed the mythological giant Xelhua must have built it.</p>
+            <img src="sanignaciolagoon.jpg" alt="San Ignacio Lagoon">
+            <h4>San Ignacio Lagoon</h4>
+            <p>Baja California's San Ignacio Lagoon is the primary calving ground for eastern Pacific gray whales and part of Mexico's El Vizcaíno Biosphere Reserve—the largest wildlife refuge in Latin America.</p>
+            <img src="tulum.jpg" alt="Tulum">
+            <h4>Tulum</h4>
+            <p>Tulum is the site of a pre-Columbian Mayan walled city which served as a major port for Coba, in the Mexican state of Quintana Roo. The ruins are situated on 12-meter-tall (39 ft) cliffs along the east coast of the Yucatán Peninsula on the Caribbean Sea.</p>
+            <img src="zipolite.jpg" alt="Zipolite">
+            <h4>Zipolite</h4>
+            <p>Zipolite is best known as being Mexico's first and only legal public nude beach and for retaining much of the hippie culture that made it notable in the 1970s. The beach is currently popular with foreign tourists, especially backpackers, who stay in one of the many rustic cabins or camping spaces that line the beach.</p>
+          </div>
+          <!-- Add more attraction elements as needed -->
+        </div>
+      </div>
+    </section>
+    <br>
+    <section id="meals">
+      <br><br><br><br><br><br><br><br>
+      <div>
+        <label for="meal-select" class="meal-select-label">Choose a meal:</label>
+        <select id="meal-select" name="meal-select">
+          <option value="">--Select a meal--</option>
+          <option value="52772">Chicken Fajitas</option>
+          <option value="52928">Beef Enchiladas</option>
+          <option value="53009">Taco Salad</option>
+          <option value="53061">Churros</option>
+        </select>
+        <button id="get-meal-btn" onclick="getMeal()">Get Meal</button>
+      </div>
+      <div id="meal-list"></div>
+    </section>
+</body>
+
+</html>
